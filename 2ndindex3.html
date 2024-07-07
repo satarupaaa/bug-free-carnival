@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h1>Workspace</h1>
+        </div>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Media</a></li>
+        </ul>
+        <div class="account">
+            <a href="#">My Account</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="search-bar">
+            <input type="text" placeholder="Search in Departments">
+            <button><img src="search-icon.png" alt="Search"></button>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Department ID</th>
+                        <th>Department Incharge</th>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Total Media Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JRYT456</td>
+                        <td>UHDSG</td>
+                        <td>JOHN</td>
+                        <td>23</td>
+                        <td>2 GB</td>
+                    </tr>
+                    <tr>
+                        <td>JHSAG636</td>
+                        <td>ASDFJ</td>
+                        <td>JANE</td>
+                        <td>45</td>
+                        <td>0.4 GB</td>
+                    </tr>
+                    <tr>
+                        <td>ASJHSA77</td>
+                        <td>SAFEF</td>
+                        <td>BOB</td>
+                        <td>76</td>
+                        <td>200 GB</td>
+                    </tr>
+                    <tr>
+                        <td>KSAHKJ366</td>
+                        <td>AFEEE</td>
+                        <td>MARY</td>
+                        <td>87</td>
+                        <td>50 GB</td>
+                    </tr>
+                    <tr>
+                        <td>SAKHJD35</td>
+                        <td>REYER</td>
+                        <td>KARAN</td>
+                        <td>76</td>
+                        <td>45 GB</td>
+                    </tr>
+                    <tr>
+                        <td>KKHUASU33</td>
+                        <td>HJHGF</td>
+                        <td>CHRISSY</td>
+                        <td>78</td>
+                        <td>500 GB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination">
+            <button>&lt;</button>
+            <span>1</span>
+            <button>&gt;</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<style>
+    body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f5fa;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #dbc0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.nav li {
+    margin: 20px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.account {
+    margin-top: auto;
+    padding: 20px;
+}
+
+.account a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #dbc0e0;
+    border: none;
+    cursor: pointer;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #dbc0e0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px;
+    background-color: #dbc0e0;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination span {
+    margin: 0 10px;
+    font-size: 18px;
+}
+</style>
+</html>
