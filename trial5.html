@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="header">
+                <div class="logo">
+                    <span>W</span>
+                </div>
+                <div class="title">
+                    <h1>WorkShop</h1>
+                </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <div class="home">                      
+                        <a href="trial1.html" target="_parent"><i class="fa fa-home"></i> Home</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="customer">
+                        <a href="trial2.html" target="_self"><i class="fa fa-user-friends"></i> Customers</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="dept">
+                        <a href="trial3.html" target="_self"><i class="fa fa-address-card"></i> Departments</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="mediabtn">
+                        <a href="trial4.html" target="_self"><i class="fa fa-images"></i> Media</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="account">
+            <a href="trial5.html"><i class="fa fa-user-alt"></i> My Account</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="search">
+            <input type="text" placeholder="Search in Home">
+            <button>🔍</button>
+        </div>
+        <div class="profile">
+            <div class="profile-image">
+                <img src="img1.jpg" alt="Profile Image">
+                <button type="button" class="edit-button" onclick="editImage()">✏</button>
+            </div>
+            <form id="profile-form">
+                <label for="name">Name:</label>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="John Doe" required>
+                    <button type="button" class="edit-button" onclick="editName('name')">✏</button>
+                </div>
+                <label for="email">Email:</label>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="example@gmail.com" required>
+                    <button type="button" class="edit-button" onclick="editEmail('email')">✏</button>
+                </div>
+                <label for="phone">Phone:</label>
+                <div class="form-group">
+                    <input type="text" id="phone" placeholder="914837348" required>
+                    <button type="button" class="edit-button" onclick="editPhone('phone')">✏</button>
+                </div>
+                <label for="dob">DOB:</label>
+                <div class="form-group">
+                    <input type="text" id="dob" placeholder="July 16, 1999" required>
+                    <button type="button" class="edit-button" onclick="editDob('dob')">✏</button>
+                </div>
+                <div class="form-actions">
+                    <button type="button" onclick="save()">Save</button>
+                    <button type="button" onclick="cancel()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
